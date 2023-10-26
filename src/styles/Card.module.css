@@ -1,0 +1,64 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.734);
+    border: 0.05rem solid black;
+    width: 14rem;
+    height: 34rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.h1{
+    width: 14rem;
+    height: 4.8rem;
+    font-size: 2rem;
+}
+
+.p{
+    width: 14rem;
+    height: 5rem;
+}
+
+.cardImage{
+    width: 14rem;
+    height: 10rem;
+    object-fit: cover ;
+    
+}
+
+.detalle{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    text-decoration: none;  
+}
+
+.back{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    text-decoration: none;   
+}
+
+.botonBack{
+    background-color: #d3436b;
+    width: 8rem;
+    height: 1.7rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.boton{
+    background-color: #d3436b;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}

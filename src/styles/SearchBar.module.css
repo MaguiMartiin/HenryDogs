@@ -1,0 +1,15 @@
+.boton {
+    background-color: white;
+    color: #d3436b;
+    height: 30px;
+    width: 100px;
+    margin-top: 0.3rem;
+    border-radius: 6px;
+}
+
+.input{
+    width: 15rem;
+    height: 25px;
+    border-radius: 6px;
+    margin-right: 3px;
+}
