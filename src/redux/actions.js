@@ -13,7 +13,6 @@ const URL = process.env.REACT_APP_URL;
 
 export const getDogs = () => {
     return async function (dispatch) {
-        console.log(URL);
         const dogs = (await axios.get(`${URL}/dogs`)).data
         return dispatch({type: GET_DOGS, payload: dogs})
     }
