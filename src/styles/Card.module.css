@@ -23,9 +23,9 @@
 }
 
 .cardImage{
-    width: 14rem;
+    width: 14em;
     height: 10rem;
-    object-fit: cover ;
+    object-fit: contain ;
     
 }
 

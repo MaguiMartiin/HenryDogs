@@ -7,7 +7,7 @@ const Card = ({name, weightMin, weightMax, heightMin, heightMax, temperament, im
     const history = useHistory()
     const currentPath = history.location.pathname
     const isDetailPage = currentPath.includes('/home/')
-    
+    console.log(image);
     return (
         <div className={style.card}>
             <h1 className={style.h1}>{name}</h1>
@@ -15,7 +15,7 @@ const Card = ({name, weightMin, weightMax, heightMin, heightMax, temperament, im
             {isDetailPage && (
                 <p>Altura: {heightMin} - {heightMax}</p> )}
             <p className={style.p}>Temperamentos: {temperament}</p>
-            <img src={dog} className={style.cardImage}/>
+            <img src={image} className={style.cardImage}/>
             {isDetailPage && (
             <Link to={'/home'} className={style.back}><button className={style.botonBack}>Back To Home</button></Link>
             )}
