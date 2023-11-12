@@ -85,9 +85,7 @@ const Form = ()=>{
         event.preventDefault()
         if (error.name === null && error.heightMin === null && error.heightMax === null && error.weightMin === null && error.weightMax === null && error.temperament === null && error.image === null) {
           const temperamentString = form.temperament.join(", ")
-            console.log(temperamentString);
             dispatch(createDog({...form, temperament: temperamentString}))
-            console.log(form);
             alert("Dog Created!")
             setForm({
                 name: "",
