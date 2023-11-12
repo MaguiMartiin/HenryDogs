@@ -51,7 +51,7 @@ const CardsContainer = () => {
 
             <div className={style.CardsContainer}> 
                 {currentDogs.map((dog) => {
-                    return <Card key={dog.id} dogs={dog} name={dog.name} image={dog.image} id={dog.id} weightMin={dog.weightMin} weightMax={dog.weightMax} heightMin={dog.heightMin} heightMax={dog.heightMax} temperament={Array.isArray(dog.temperament) ? dog.temperament.join(", ") : ''}/>
+                    return <Card key={dog.id} dogs={dog} name={dog.name} image={dog.image} id={dog.id} weightMin={dog.weightMin} weightMax={dog.weightMax} heightMin={dog.heightMin} heightMax={dog.heightMax} temperament={Array.isArray(dog.temperament) ? dog.temperament.join(", ") : dog.temperament}/>
                         })}
             </div>
         </div>

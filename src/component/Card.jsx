@@ -7,7 +7,7 @@ const Card = ({name, weightMin, weightMax, heightMin, heightMax, temperament, im
     const history = useHistory()
     const currentPath = history.location.pathname
     const isDetailPage = currentPath.includes('/home/')
-    console.log(image);
+    
     return (
         <div className={style.card}>
             <h1 className={style.h1}>{name}</h1>

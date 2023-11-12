@@ -26,7 +26,7 @@ const Detail = ()=>{
     return (
         <div className={styleD.container}>   
             {dogDetail && (
-            <Card className={styleD.cardD} name={dogDetail.name} key={dogDetail.id} image={dogDetail.image} id={dogDetail.id} weightMin={dogDetail.weightMin} weightMax={dogDetail.weightMax} heightMin={dogDetail.heightMin} heightMax={dogDetail.heightMax} temperament={dogDetail.temperament.join(", ")} />
+            <Card className={styleD.cardD} name={dogDetail.name} key={dogDetail.id} image={dogDetail.image} id={dogDetail.id} weightMin={dogDetail.weightMin} weightMax={dogDetail.weightMax} heightMin={dogDetail.heightMin} heightMax={dogDetail.heightMax} temperament={Array.isArray(dogDetail.temperament) ? dogDetail.temperament.join(", ") : dogDetail.temperament} />
             )}
         </div>
     )
