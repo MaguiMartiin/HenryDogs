@@ -1,11 +1,19 @@
-import {  useState } from "react"
+import {  useState, useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { createDog } from "../redux/actions"
 import style from '../styles/Form.module.css'
+import { getTemperaments } from "../redux/actions"
+import { useHistory } from "react-router-dom"
 
 const Form = ()=>{
     const dispatch = useDispatch()
+    useEffect(()=>{
+      dispatch(getTemperaments())
+    },[dispatch])
+
     const temperamentA = useSelector((state)=>state.temperaments)
+
+    const history = useHistory()
 
     const [form, setForm] = useState({
         name: "",
@@ -97,6 +105,7 @@ const Form = ()=>{
                 image: "",
                 temperament: [],
             })
+            history.push('/home')
         } else {alert("Complete the required fields!")}
     } 
 
